@@ -22,7 +22,7 @@ media=float(nota1+nota2/2)
 print(f'A media das notas {nota1 } e {nota2} é {media}')
 
 # # 5 - Faça um programa que calcule a raiz quadrada de um número. O usuário deve inserir um número e o programa deve mostrar na tela o resultado da raiz quadrada do número inserido.
-# numero=float(input('Insira um número para calcular sua raiz: '))
+numero=float(input('Insira um número para calcular sua raiz: '))
 raiz=(numero)**1/2
 print(f'A raiz quadrada do número {numero} é {raiz}')
 
