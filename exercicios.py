@@ -136,16 +136,25 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
+#Introdução ao jogo
 print("Bem vindo a Ilha do Tesouro")
 print("Sua missão é achar e capturar o tesouro") 
-escolha=input('Você encontrou dois caminhos. Escolha entre a esquerda ou a direita: ')
-if escolha=='direita':
-    print('Você caiu no buraco. Fim do jogo.') #ta errado aqui, o jogo não termina
-elif escolha=='esquerda':
-        print('Passou.')
-escolha=input('Agora você encontrou um trecho do mar agitado. Escolha entre nadar ou esperar: ')
-if escolha=='nadar':
-      print('Você morreu afogado. Fim do jogo')
-elif escolha=='esperar':
-      print('Passou.')
-    
+#Jogo
+escolha=input('Você encontrou dois caminhos. Escolha entre a esquerda ou a direita: ').lower()
+if escolha== "esquerda":
+    escolha2= input('Você chegou a um lago. Deseja esperar ou nadar? \n').lower()
+    if escolha2 == "esperar":
+        escolha3 = input("Como você esperou, agora há um barco na beira do lago. Agora tem uma casa com três portas: vermelha, amarela e azul. Qual você deseja escolher?\n").lower()
+        if escolha3 == "vermelha":
+            print("Uma sala pegando fogo. Fim do jogo")
+        elif escolha3 == "amarela":
+            print("Achou o tesouro. Você venceu!")
+        elif escolha3 == "azul":
+            print("Entrou em uma sala cheio de pragas malignas. Fim do jogo")
+        
+        else:
+            print("Essa porta explodiu. Fim do jogo.")
+    else:
+        print('Você foi morto por um jacaré. Fim do jogo.')        
+else:
+      print('Você caiu em um buraco. Fim do jogo.')
