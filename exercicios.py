@@ -114,47 +114,61 @@ import random as rd
 #     print('Escolha uma das opções informadas.')
 
 #Exercicio 13 - Ilha do tesouro
-print('''
-*******************************************************************************
-          |                   |                  |                     |
- _________|________________.=""_;=.______________|_____________________|_______
-|                   |  ,-"_,=""     `"=.|                  |
-|___________________|__"=._o`"-._        `"=.______________|___________________
-          |                `"=._o`"=._      _`"=._                     |
- _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
-|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
-|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
-          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
- _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
-|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
-|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
-____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
-/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
-____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
-/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
-____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
-/______/______/______/______/______/______/______/______/______/______/_____ /
-*******************************************************************************
-''')
-#Introdução ao jogo
-print("Bem vindo a Ilha do Tesouro")
-print("Sua missão é achar e capturar o tesouro") 
-#Jogo
-escolha=input('Você encontrou dois caminhos. Escolha entre a esquerda ou a direita: ').lower()
-if escolha== "esquerda":
-    escolha2= input('Você chegou a um lago. Deseja esperar ou nadar? \n').lower()
-    if escolha2 == "esperar":
-        escolha3 = input("Como você esperou, agora há um barco na beira do lago. Agora tem uma casa com três portas: vermelha, amarela e azul. Qual você deseja escolher?\n").lower()
-        if escolha3 == "vermelha":
-            print("Uma sala pegando fogo. Fim do jogo")
-        elif escolha3 == "amarela":
-            print("Achou o tesouro. Você venceu!")
-        elif escolha3 == "azul":
-            print("Entrou em uma sala cheio de pragas malignas. Fim do jogo")
+# print('''
+# *******************************************************************************
+#           |                   |                  |                     |
+#  _________|________________.=""_;=.______________|_____________________|_______
+# |                   |  ,-"_,=""     `"=.|                  |
+# |___________________|__"=._o`"-._        `"=.______________|___________________
+#           |                `"=._o`"=._      _`"=._                     |
+#  _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+# |                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+# |___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+#           |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+#  _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+# |                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+# |___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+# ____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+# /______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+# ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+# /______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+# ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+# /______/______/______/______/______/______/______/______/______/______/_____ /
+# *******************************************************************************
+# ''')
+# #Introdução ao jogo
+# print("Bem vindo a Ilha do Tesouro")
+# print("Sua missão é achar e capturar o tesouro") 
+# #Jogo
+# escolha=input('Você encontrou dois caminhos. Escolha entre a esquerda ou a direita: ').lower()
+# if escolha== "esquerda":
+#     escolha2= input('Você chegou a um lago. Deseja esperar ou nadar? \n').lower()
+#     if escolha2 == "esperar":
+#         escolha3 = input("Como você esperou, agora há um barco na beira do lago. Agora tem uma casa com três portas: vermelha, amarela e azul. Qual você deseja escolher?\n").lower()
+#         if escolha3 == "vermelha":
+#             print("Uma sala pegando fogo. Fim do jogo")
+#         elif escolha3 == "amarela":
+#             print("Achou o tesouro. Você venceu!")
+#         elif escolha3 == "azul":
+#             print("Entrou em uma sala cheio de pragas malignas. Fim do jogo")
         
-        else:
-            print("Essa porta explodiu. Fim do jogo.")
-    else:
-        print('Você foi morto por um jacaré. Fim do jogo.')        
-else:
-      print('Você caiu em um buraco. Fim do jogo.')
+#         else:
+#             print("Essa porta explodiu. Fim do jogo.")
+#     else:
+#         print('Você foi morto por um jacaré. Fim do jogo.')        
+# else:
+#       print('Você caiu em um buraco. Fim do jogo.')
+
+#Exercicio 14: Escreva um programa que receba uma lista de 10 números. O programa deve retornar para o usuário duas novas listas, uma com os números pares e outra com os números ímpares. 
+# Por exemplo, se a lista for [1, 2, 3, 4, 5, 6]:
+# Lista Pares: = [2,4,6]
+# Lista Impares: = [1,3,5]
+
+# Exercicio 15: Escreva uma programa que receba uma lista de números e retorne a soma de todos os elementos da lista. Por exemplo, se a lista for [1, 2, 3, 4], a função deve retornar 10.
+
+# Exercicio 16: Escreva uma função que receba uma lista de strings e retorne uma nova lista com as strings da lista original em maiúsculas. Por exemplo, se a lista for [“a”, “b”, “c”, “d”], a função deve retornar [“A”, “B”, “C”, “D”].
+
+# Exercicio 17: Escreva uma função que receba uma lista de números e retorne uma nova lista com os elementos da lista original multiplicados por 2. Por exemplo, se a lista for [1, 2, 3, 4], a função deve retornar [2, 4, 6, 8].
+
+# Exercicio 18: Escreva uma função que receba uma lista de números e retorne uma nova lista com os números pares na ordem inversa e os números ímpares na ordem original. 
+# Por exemplo, se a lista for [1, 2, 3, 4, 5, 6], a função deve retornar [1, 3, 5, 6, 4, 2].
