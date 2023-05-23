@@ -165,10 +165,22 @@ import random as rd
 # Lista Impares: = [1,3,5]
 
 # Exercicio 15: Escreva uma programa que receba uma lista de números e retorne a soma de todos os elementos da lista. Por exemplo, se a lista for [1, 2, 3, 4], a função deve retornar 10.
-
+lista = [1,3,4,6,7]
+soma = sum(lista)   
+print(soma)
 # Exercicio 16: Escreva uma função que receba uma lista de strings e retorne uma nova lista com as strings da lista original em maiúsculas. Por exemplo, se a lista for [“a”, “b”, “c”, “d”], a função deve retornar [“A”, “B”, “C”, “D”].
-
+lista = ["j", "o", "ã", "o"]
+maiuscula = [item.upper() for item in lista]
+print(maiuscula)
 # Exercicio 17: Escreva uma função que receba uma lista de números e retorne uma nova lista com os elementos da lista original multiplicados por 2. Por exemplo, se a lista for [1, 2, 3, 4], a função deve retornar [2, 4, 6, 8].
+lista = [4,8,7,4]
+multiplicar = 2
+resultado= []
 
+for numero in lista:
+    resultado.append(numero * multiplicar)
+
+print(resultado)
 # Exercicio 18: Escreva uma função que receba uma lista de números e retorne uma nova lista com os números pares na ordem inversa e os números ímpares na ordem original. 
 # Por exemplo, se a lista for [1, 2, 3, 4, 5, 6], a função deve retornar [1, 3, 5, 6, 4, 2].
+lista = [1,2,3,4,5,6,7,8,9,10]
