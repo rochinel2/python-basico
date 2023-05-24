@@ -226,3 +226,29 @@ import random as rd
 
 # lista_par.extend(lista_impar)
 # print(lista_par)
+
+# Exercicio 19: Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+# letra=input('Digite uma letra: ').upper()
+
+# if letra=='A' or letra=='E' or letra=='I' or letra=='O' or letra=='U':
+#     print('É uma vogal.')
+# else:
+#     print('Consoante.')
+
+# Exercicio 20: Faça um Programa que leia três números inteiros e mostre o maior deles.
+# lista=[]
+
+# for x in range(1,4):
+#     numeros=input('Número: ')
+#     lista.append(numeros)
+# print(lista)
+# print(max(lista))
+
+# Exercicio 21: 
+lista = []
+
+for x in range(1,4):
+    numero=int(input('Número: '))
+    lista.append(numero)
+lista.sort(reverse=True)
+print(lista)
