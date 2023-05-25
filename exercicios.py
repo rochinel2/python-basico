@@ -244,11 +244,61 @@ import random as rd
 # print(lista)
 # print(max(lista))
 
-# Exercicio 21: 
-lista = []
+# Exercicio 21: Faça um Programa que leia três números e mostre-os em ordem decrescente. 
+# lista = []
 
-for x in range(1,4):
-    numero=int(input('Número: '))
-    lista.append(numero)
-lista.sort(reverse=True)
-print(lista)
+# for x in range(1,4):
+#     numero=int(input('Número: '))
+#     lista.append(numero)
+# lista.sort(reverse=True)
+# print(lista)
+
+# Exercicio 22: Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido. 
+# nota=int(input('Nota: '))
+
+# while nota<11:
+#     print(f'Sua nota é: {nota}')
+#     break
+# else:
+#     print('Favor informar um número até 10')
+
+# Exercicio 23: Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações. 
+# usuario=input('Usuário: ')
+# senha=input('Senha: ')
+
+# while usuario==senha:
+#     print('Sua senha deverá ser diferente do usuário.')
+#     senha = input('Senha: ')
+
+# else:
+#     print('Login feito com sucesso.')
+
+#Exercicio 24: .Faça um programa que leia e valide as seguintes informações:
+    # Nome: maior que 3 caracteres;
+    # Idade: entre 0 e 150;
+    # Salário: maior que zero;
+    # Sexo: 'f' ou 'm';
+    # Estado Civil: 's', 'c', 'v', 'd';
+# nome=input('Digite seu nome: ')
+# while len(nome) <=3:
+#     nome=input('Seu nome precisar ser maior que 3 caracteres. Digite novamente: ')
+
+# idade=int(input('Idade: '))
+# while (idade<1) and (idade>150):
+#     idade=input('Sua idade precisa ter de 1 até 150 caracteres. Digite novamente: ')
+
+
+# salario=float(input('Salário: R$'))
+# while (salario==0):
+#     salario=input('Seu salario informado precisa ser maior que 0. Digite novamente: ')
+
+# sexo=input('Sexo(f ou m): ')
+# while (sexo !="f") and (sexo !="m"):
+#     sexo=input('Escolha entre "m" ou "f". Tente novamente: ').lower()
+
+# civil=input('Estado civil(s,c,v,d): ').lower()
+# while (civil!='s') and (civil!='c') and (civil!='v') and (civil!='d'):
+#     civil=input('Opção incorreta. Escolha entre "s" de solteiro, "c" de casado, "v" viúvo ou "d" divorciado: ')
+
+# else:
+#     print('Cadastro feito com sucesso')
