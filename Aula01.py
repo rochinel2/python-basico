@@ -1,6 +1,6 @@
 # Comentários
 """
-COmentarios
+Comentarios
 dois
 tres
 """
@@ -13,4 +13,3 @@ quebrado = 2.2 #float
 
 idade_quebrado = float(idade)
 print(type(idade_quebrado))
-input
