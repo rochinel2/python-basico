@@ -287,7 +287,6 @@ import random as rd
 # while (idade<1) and (idade>150):
 #     idade=input('Sua idade precisa ter de 1 até 150 caracteres. Digite novamente: ')
 
-
 # salario=float(input('Salário: R$'))
 # while (salario==0):
 #     salario=input('Seu salario informado precisa ser maior que 0. Digite novamente: ')
@@ -302,3 +301,32 @@ import random as rd
 
 # else:
 #     print('Cadastro feito com sucesso')
+
+#Exercico 25: Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
+# Tabuada de 5:
+# 5 X 1 = 5
+# 5 X 2 = 10
+# ...
+# 5 X 10 = 50
+# numero=int(input('Insira um número:\n'))
+
+# while (numero<1) or (numero>10):
+#     numero=int(input('Escolha um número de 1 a 10:\n'))
+
+# for x in range(1,11):
+#     print(f'{x}x{numero}={x*numero}')
+
+# Exercicio 26: Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números ímpares:
+# impares=int()
+# pares=int()
+
+# for x in range(1,11):
+#     int(input('Insira 10 números: \n'))
+
+#Não sei como vou fazer para separar os números impares e os pares.
+# impares=(x%2!=0)
+# pares=(x%2==0)
+
+
+
+    
