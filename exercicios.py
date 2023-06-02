@@ -136,7 +136,7 @@ import random as rd
 # /______/______/______/______/______/______/______/______/______/______/_____ /
 # *******************************************************************************
 # ''')
-# #Introdução ao jogo
+#Introdução ao jogo
 # print("Bem vindo a Ilha do Tesouro")
 # print("Sua missão é achar e capturar o tesouro") 
 # #Jogo
@@ -211,21 +211,21 @@ import random as rd
 
 # # Exercicio 18: Escreva uma função que receba uma lista de números e retorne uma nova lista com os números pares na ordem inversa e os números ímpares na ordem original. 
 # # Por exemplo, se a lista for [1, 2, 3, 4, 5, 6], a função deve retornar [1, 3, 5, 6, 4, 2].
-# lista_par = []
-# lista_impar = []
+lista_par = []
+lista_impar = []
 
-# for x in range(1,11):
-#     numeros=int(input('Números: '))
-#     if numeros%2==0:
-#         lista_par.append(numeros)
+for x in range(1,11):
+    numeros=int(input('Números: '))
+    if numeros%2==0:
+        lista_par.append(numeros)
 
-#     else:
-#         lista_impar.append(numeros)
+    else:
+        lista_impar.append(numeros)
 
-# lista_par.reverse()
+lista_par.reverse()
 
-# lista_par.extend(lista_impar)
-# print(lista_par)
+lista_par.extend(lista_impar)
+print(lista_par)
 
 # Exercicio 19: Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
 # letra=input('Digite uma letra: ').upper()
