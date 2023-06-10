@@ -74,7 +74,7 @@ import random as rd
 # print(f'{numero} X 9= {numero*9}')
 # print(f'{numero} X 10= {numero*10}')
 
-#Exercicio 11 - Ler duas notas, calcular a média e informar se foi reprovado, aprovado ou se foi para recuperação. Aprovado > 7, Reprovado < 5, Recuperação >= 5.
+# Exercicio 11 - Ler duas notas, calcular a média e informar se foi reprovado, aprovado ou se foi para recuperação. Aprovado > 7, Reprovado < 5, Recuperação >= 5.
 # nota1=float(input('Informe a sua primeira nota: '))
 # nota2=float(input('E a segunda nota: '))
 # media= (nota1+nota2)/2
@@ -86,7 +86,7 @@ import random as rd
 # else:
 #     print('Você foi reprovado.')
 
-#Exercicio 12 - Criar um pedra, papel ou tesoura.
+# Exercicio 12 - Criar um pedra, papel ou tesoura.
 # opcoes=['pedra', 'papel', 'tesoura']
 # escolha1= input('Escolha entre pedra, papel ou tesoura: ').strip().lower()
 # escolha2= rd.choice(opcoes)
@@ -113,7 +113,7 @@ import random as rd
 # else:
 #     print('Escolha uma das opções informadas.')
 
-#Exercicio 13 - Ilha do tesouro
+# Exercicio 13 - Ilha do tesouro
 # print('''
 # *******************************************************************************
 #           |                   |                  |                     |
@@ -136,7 +136,7 @@ import random as rd
 # /______/______/______/______/______/______/______/______/______/______/_____ /
 # *******************************************************************************
 # ''')
-#Introdução ao jogo
+# Introdução ao jogo
 # print("Bem vindo a Ilha do Tesouro")
 # print("Sua missão é achar e capturar o tesouro") 
 # #Jogo
@@ -273,12 +273,12 @@ import random as rd
 # else:
 #     print('Login feito com sucesso.')
 
-#Exercicio 24: .Faça um programa que leia e valide as seguintes informações:
-    # Nome: maior que 3 caracteres;
-    # Idade: entre 0 e 150;
-    # Salário: maior que zero;
-    # Sexo: 'f' ou 'm';
-    # Estado Civil: 's', 'c', 'v', 'd';
+# Exercicio 24: .Faça um programa que leia e valide as seguintes informações:
+#     Nome: maior que 3 caracteres;
+#     Idade: entre 0 e 150;
+#     Salário: maior que zero;
+#     Sexo: 'f' ou 'm';
+#     Estado Civil: 's', 'c', 'v', 'd';
 # nome=input('Digite seu nome: ')
 # while len(nome) <=3:
 #     nome=input('Seu nome precisar ser maior que 3 caracteres. Digite novamente: ')
@@ -302,7 +302,7 @@ import random as rd
 # else:
 #     print('Cadastro feito com sucesso')
 
-#Exercico 25: Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
+# Exercico 25: Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
 # Tabuada de 5:
 # 5 X 1 = 5
 # 5 X 2 = 10
@@ -323,10 +323,67 @@ import random as rd
 # for x in range(1,11):
 #     int(input('Insira 10 números: \n'))
 
-#Não sei como vou fazer para separar os números impares e os pares.
+# Não sei como vou fazer para separar os números impares e os pares.
 # impares=(x%2!=0)
 # pares=(x%2==0)
 
-#Exercicio 27: Adivinhar palavras através de dicas usando dicionário.
+# Exercício 27: Jogo de Palavras
+
+# Neste exercício, você deve criar um jogo de palavras em que o jogador deve adivinhar a palavra correta com base em uma dica. Use um dicionário para armazenar as palavras e suas respectivas dicas.
+
+# Passo 1: Crie o dicionário de palavras e dicas  ex:
+# palavras = {
+#     "python": "Uma linguagem de programação popular.",
+#     "banana": "Uma fruta amarela e doce.",
+#     "abacaxi": "Uma fruta tropical com casca dura e espinhosa.",
+#     "computador": "Uma máquina eletrônica que processa dados.",
+#     "aviao": "Meio de transporte que voa pelos céus."
+# }
+
+# Passo 2: Escolha uma palavra aleatória para o jogador adivinhar
+
+# Passo 3: Apresente a dica ao jogador e peça a resposta
+
+# Passo 4: Verifique se a resposta está correta e informe o jogador
+# ex:
+# Parabéns! Você acertou a palavra!
+# Infelizmente, você errou. A palavra correta era ...
+# import random
+# palavras={
+# 'relógio': 'Este objeto tem ponteiros e é usado para medir o tempo.',
+# 'espremedor de limão': 'Este objeto é usado na cozinha para extrair o suco cítrico de uma fruta.',
+# 'binóculos': 'Este objeto é usado para ampliar a visão e observar objetos distantes.',
+# 'chapéu de palha': 'Este objeto é usado na cabeça para proteger do sol e é comumente associado a ambientes tropicais.',
+# 'abajur': 'Este objeto é usado como fonte de iluminação e geralmente é colocado em mesas ou criados-mudos.',
+# 'martelo': 'Este objeto é uma ferramenta manual usada para bater em pregos ou quebrar coisas.',
+# 'bola de futebol': 'Este objeto é redondo e usado em um esporte em que os jogadores chutam a bola para marcar gols.',
+# 'binóculo astronômico': 'Este objeto é usado para observar o céu noturno e ampliar a visão de estrelas, planetas e outros corpos celestes.',
+# 'mala': 'Este objeto é usado para armazenar roupas e outros itens pessoais durante viagens.',
+# 'fone de ouvido': 'Este objeto é usado para ouvir música.'
+# }
+# objeto = random.choice(list(palavras.keys()))
+# dica = palavras[objeto]
+
+# print("Jogo de Palavras")
+# print("Dica: " + dica)
+# resposta = input("Digite a palavra: \n")
+# if resposta.lower() == objeto:
+#     print("Parabéns! Você acertou a palavra!")
+# else:
+#     print("Infelizmente, você errou. A palavra correta era", objeto + ".")
+
+# Exercicio 28: Faça um programa que tenha uma função chama área(), que receba as dimensões de um terreno retangular (largura e comprimento) e mostre a área do terreno.
+# def área(b,h):
+#     A=b*h
+#     print(f'O valor da área é: {A}m²')
+
+
+# b=float(input('Insira o valor da base: \n'))
+# h=float(input('Insira o valor da altura: \n'))
+# área(b,h)
+
+
+
+
 
     
